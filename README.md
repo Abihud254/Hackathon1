@@ -3,7 +3,7 @@
 Hello buddies,
 
 Welcome to my personal portfolio website created from only HTML and CSS. 
-i have created this from a beginner's point of view, with no additional language involved.
+I have created this from a beginner's point of view, with no additional language involved.
 
 You can view the live version here:  
 https://github.com/Abihud254/Hackathon1 

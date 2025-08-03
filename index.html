@@ -1,51 +1,383 @@
 <!DOCTYPE html> <!-- This tells the browser the document is HTML -->
-<html lang="en"> <!-- Starts the HTML document and sets the language to English -->
+<html lang="en"> <!-- This starts the HTML document and sets the language to English -->
 <head>
-  <meta charset="UTF-8"> <!-- Character encoding for special characters -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes site responsive -->
-  <title>Your Name | Portfolio</title> <!-- The title shown on the browser tab -->
-  <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+
+  <!-- meta tags-->
+  <meta charset="UTF-8"> <!-- This is for special characters -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This is to make the site responsive -->
+  <title>Abihud Ochieng | Software Developer Portfolio</title> <!-- This is the title as shown on the browser tab -->
+  <link rel="stylesheet" href="styles.css"> <!-- This links to my CSS file -->
 </head>
+
 <body>
 
-  <!-- Header section with your name and navigation menu -->
+  <!-- Header section  -->
   <header>
-    <h1>Your Name</h1> <!-- Main heading -->
-    <nav>
-      <!-- Links jump to different parts of the same page -->
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+    <h1>Abihud Ochieng</h1> <!-- Main heading -->
+
+    <!--Naviagetion Bar-->
+   <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                
+                <!-- Navigation links list -->
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                  </ul>
+            </div>
+        </div>
     </nav>
   </header>
 
-  <!-- About section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hi! I am learning web development. This is my first website portfolio!</p>
+
+
+ <!-- = INTRO SECTION = -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- inrto text content -->
+                <div class="hero-text">
+                    <div class="greeting">Greetings.</div>
+                    <div class="greeting-line"></div>
+                    <div class="name">I'm Abihud</div>
+                    <div class="title">An upcoming Software Developer</div>
+                    <!-- buttons on intro -->
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary">Let's Connect</a>
+                        <a href="Abihud Resume (3).pdf" class="btn-secondary" download="Abihud Resume (3).pdf">My Resume</a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES I offer -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="services-content">
+
+              <!-- ABOUT SECTION -->
+                <div class="about-section">
+                    <div class="about-text">
+                        <h2>About me</h2>
+                        <p>
+                            Hi! I am a web development learner. This is my first website portfolio. It is not very colorful, but atleast it is live😊. 
+                            I graduated in 2023 with a Mathematical Statistics degree from Kisii University,
+                             with a sharp analytical mind and a growing passion for app development and cybersecurity. 
+                            I thrive at the intersection of data, code, and digital security, where creativity meets precision. 
+                             Currently leveling up my skills in full-stack development although I am on a mission to become an ethical hacker.
+        
+                        </p>
+                        <p>
+                            Knowing how to build is the sure way to know how to fix what has been broken. 
+                            Therefore, I intend to build apps that not only work smoothly but stand strong against threats, 
+                            while also correcting those that have been affected.  
+                            Whether it's crafting secure user experiences or decoding vulnerabilities, 
+                            I’m driven by curiosity, innovation, and the thrill of solving complex problems especially in the financial sector.
+                        </p>
+
+                        
+                    </div>
+                </div>
+
+                <!-- Services list -->
+
+                <div class="service-item">
+                        <div class="service-dot"></div>
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="8" rx="2"></rect>
+                                <rect x="2" y="14" width="20" height="8" rx="2"></rect>
+                                <path d="M6 6h.01"></path>
+                                <path d="M6 18h.01"></path>
+                            </svg>
+                        </div>
+                        <div class="service-text">
+                            <h3>Frontend Development</h3>
+                            <p>I use my frontend development knowledge to improve the user interface.
+                            </p>
+                        </div>
+                    </div>
+
+                <div class="services-list">
+                    <div class="services-line"></div>
+                    <div class="service-item">
+                        <div class="service-dot"></div> 
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"></path>
+                                <path d="M22 14H2"></path>
+                            </svg>
+                        </div>
+                        <div class="service-text">
+                            <h3>Website Development</h3>
+                            <p>I build simple websites with mind blowing impact</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-dot"></div>
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="5" y="2" width="14" height="20" rx="2"></rect>
+                                <path d="M12 18h.01"></path>
+                            </svg>
+                        </div>
+                        <div class="service-text">
+                            <h3>Application Development</h3>
+                            <p>Currently I can only build a simple application but hope to increase my complexity as I continue learning. 
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-dot"></div>
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="8" rx="2"></rect>
+                                <rect x="2" y="14" width="20" height="8" rx="2"></rect>
+                                <path d="M6 6h.01"></path>
+                                <path d="M6 18h.01"></path>
+                            </svg>
+                        </div>
+                        <div class="service-text">
+                            <h3>Backend Development</h3>
+                            <p>Just as I created this website with only HTML and CSS, I hope to improve it with other language models to make it appealing.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="education">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                
+            </div>
+            
+            <!-- Education timeline items -->
+                      
+            <div class="education-item">
+                <div class="education-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2v4"></path>
+                        <path d="M5 12H2"></path>
+                        <path d="M22 12h-3"></path>
+                        <path d="M12 22v-4"></path>
+                        <path d="M18 6l-3 3"></path>
+                        <path d="M6 18l3-3"></path>
+                        <path d="M18 18l-3-3"></path>
+                        <path d="M6 6l3 3"></path>
+                    </svg>
+                </div>
+                <div class="education-details">
+                    <h3>Software Engineering</h3>
+                    <p class="institution">Power Learn Project</p>
+                    <p class="dates">Currently</p>
+                    <p class="description">Software Engineering.</p>
+                </div>
+            </div>
+            
+             <div class="education-item">
+                <div class="education-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"></path>
+                    </svg>
+                </div>
+                <div class="education-details">
+                    <h3>KCSE (Second Class Honors)</h3>
+                    <p class="institution">Kisii University</p>
+                    <p class="dates">Graduated</p>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="education-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"></path>
+                    </svg>
+                </div>
+                <div class="education-details">
+                    <h3>KCSE (B+)</h3>
+                    <p class="institution">G.E.C High School</p>
+                    <p class="dates">Graduated</p>
+                </div>
+            </div>
+            
+            <div class="education-item">
+                <div class="education-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="8" r="7"></circle>
+                        <path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"></path>
+                    </svg>
+                </div>
+                <div class="education-details">
+                    <h3>KCPE (368 marks)</h3>
+                    <p class="institution">Okore Ogonda Primary School</p>
+                    <p class="dates">Graduated</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Coding History -->
+    <section id="learning" class="interests">
+        <div class="container">
+            <!-- Section header -->
+            <div class="section-header">
+                <h2 class="section-title">Coding History</h2>
+                
+            </div>
+            
+            <div class="interests-grid">
+                <!-- Past -->
+                <div class="interest-card">
+                    <div class="interest-icon" style="background: #0988f0;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3>Past</h3>
+                    <p>
+                      I did my degree in mathematical statistics but gained further interest in coding after gatting my hands on R language for statistical analysis. 
+                      The Power Learn Project has granted me the privilege to gain knowledge in website creating and software development, which I now pursue. 
+                    </p>
+                </div>
+                
+                <!-- Present -->
+                <div class="interest-card">
+                    <div class="interest-icon" style="background: #0bee29;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="m9 12 2 2 4-4"></path>
+                        </svg>
+                    </div>
+                    <h3>Present</h3>
+                    <p>Currently I find Artificial Intelligence valuable in fixing bugs in my HTML and CSS codes.
+                      I am also studying javascript and Pythonfor I know they will prove useful in furture.
+
+                    </p>
+                </div>
+                
+                <!-- Future -->
+                <div class="interest-card">
+                    <div class="interest-icon" style="background: #1900ff;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v4"></path>
+                            <path d="m16.24 7.76 2.83-2.83"></path>
+                            <path d="M18 12h4"></path>
+                            <path d="m16.24 16.24 2.83 2.83"></path>
+                            <path d="M12 18v4"></path>
+                            <path d="m7.76 16.24-2.83 2.83"></path>
+                            <path d="M6 12H2"></path>
+                            <path d="m7.76 7.76-2.83-2.83"></path>
+                        </svg>
+                    </div>
+                    <h3>Future</h3>
+                    <p>
+                      In future, I intend to create a system that will educate the upcoming youth on financial lieteracy.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  PROJECTS SECTION -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <!-- Section header -->
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">A sample of my project. </p>
+            </div>
+            
+            <div class="projects-grid">
+                
+                
+                <!-- portfolio -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                <path d="m3.27 6.96 8.73 5.05 8.74-5.05"></path>
+                                <path d="M12 22.08V12"></path>
+                            </svg>
+                        </div>
+                        <h3 class="project-title">Sofware Developer Website Potforlio</h3>
+                    </div>
+                    <p class="project-description">
+                        A classic but simple design of my potforlio and a junior software developer. 
+                        The website was created purely using HTML and CSS.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Vanilla HTML</span>
+                        <span class="tech-tag">Vanilla CSS</span>
+                    
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Abihud254/Hackathon1" class="project-link primary" target="_blank" rel="noopener noreferrer">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 
+                                1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                            Check it out on GitHub
+                        </a>
+                    </div>
+                </div>
+
   </section>
 
-  <!-- Projects section -->
-  <section id="projects">
-    <h2>Projects</h2>
-
-    <!-- Single project card -->
-    <div class="project">
-      <h3>Sample Project</h3>
-      <p>This is a description of one of my projects.</p>
-    </div>
-
-  </section>
-
-  <!-- Contact section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email me at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+  <!-- Find Me Section -->
+  <section id="Find Me" class="Find Me">
+    <h2>Find Me</h2>
+    <p>Email me at: <a href="mailto:brightwritershub@gmail.com">brightwritershub@gmail.com</a></p>
   </section>
 
   <!-- Footer section -->
-  <footer>
-    <p>&copy; 2025 Your Name</p> <!-- Copyright -->
+  <footer class="footer">
+        <div class="container">
+
+     <!-- Social media links -->
+                <div class="social-links">
+                    <a href="https://github.com/Abihud254" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 
+                            1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100088100610527" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <path d="M17.5 6.5h.01"></path>
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/254707160892" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 21 1 23"></path>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                            <path d="M9 9h.01"></path>
+                            <path d="M15 9h.01"></path>
+                            <path d="M21 12c0 4.418-4.03 8-9 8a9.86 9.86 0 0 1-4.255-.949L3 21l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8Z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+          <p>&copy; 2025 Abihud Ochieng</p> <!-- Copyright -->
+    <p>Proudly made in Kenya with love</p>
   </footer>
 
 </body>

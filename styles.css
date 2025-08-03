@@ -1,7 +1,7 @@
 /* Set the font and basic page background */
 body {
   font-family: Arial, sans-serif; /* Sets the font style */
-  background-color: #f4f4f4;      /* Light gray background */
+  background-color: #0f0e0e;      /* Black gray background */
   margin: 0;                      /* Removes default margin */
   padding: 0;                     /* Removes default padding */
 }
@@ -16,13 +16,14 @@ header {
 
 /* Style navigation links */
 nav a {
-  color: white;                  /* White link text */
-  margin: 0 10px;                /* Space between links */
+  color: rgb(42, 13, 173);                  /* White link text */
+  margin: 2 10px;                /* Space between links */
   text-decoration: none;         /* Removes underline from links */
 }
 
 /* Style each content section */
 section {
+  background-color: rgb(247, 240, 240);
   padding: 2rem;                 /* Space inside each section */
   max-width: 800px;              /* Limit the width for readability */
   margin: auto;                  /* Center the section horizontally */
@@ -30,7 +31,7 @@ section {
 
 /* Style individual project blocks */
 .project {
-  background: white;             /* White background for project cards */
+  background: rgb(241, 237, 237);             /* White background for project cards */
   padding: 1rem;                 /* Inner spacing */
   margin-top: 1rem;              /* Space above the project */
   border-radius: 5px;            /* Rounded corners */

@@ -1,46 +1,161 @@
-/* Set the font and basic page background */
+/* Dark hacker theme with light green accent */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-  font-family: Arial, sans-serif; /* Sets the font style */
-  background-color: #0f0e0e;      /* Black gray background */
-  margin: 0;                      /* Removes default margin */
-  padding: 0;                     /* Removes default padding */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1117;
+  color: #c9d1d9;
 }
-
-/* Style the header section */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
 header {
-  background-color: #333;         /* Dark gray background */
-  color: white;                   /* White text */
-  padding: 1rem;                  /* Padding inside the header */
-  text-align: center;            /* Center the text */
+  background: #161b22;
+  padding: 2rem 0;
+  text-align: center;
 }
-
-/* Style navigation links */
-nav a {
-  color: rgb(42, 13, 173);                  /* White link text */
-  margin: 2 10px;                /* Space between links */
-  text-decoration: none;         /* Removes underline from links */
+header h1 {
+  font-size: 2.5rem;
+  color: #39ff14;
 }
-
-/* Style each content section */
-section {
-  background-color: rgb(247, 240, 240);
-  padding: 2rem;                 /* Space inside each section */
-  max-width: 800px;              /* Limit the width for readability */
-  margin: auto;                  /* Center the section horizontally */
+.navbar {
+  background: #21262d;
 }
-
-/* Style individual project blocks */
-.project {
-  background: rgb(241, 237, 237);             /* White background for project cards */
-  padding: 1rem;                 /* Inner spacing */
-  margin-top: 1rem;              /* Space above the project */
-  border-radius: 5px;            /* Rounded corners */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 1rem 0;
 }
-
-/* Style the footer */
-footer {
-  text-align: center;            /* Center the footer text */
-  padding: 1rem;                 /* Inner spacing */
-  background-color: #333;        /* Dark background */
-  color: white;                  /* White text */
+.nav-link {
+  color: #8b949e;
+}
+.nav-link:hover {
+  color: #39ff14;
+}
+.hero {
+  text-align: center;
+  padding: 5rem 0;
+}
+.greeting {
+  color: #39ff14;
+}
+.name {
+  font-size: 2.5rem;
+  color: #c9d1d9;
+}
+.title {
+  margin: 1rem 0;
+  color: #8b949e;
+}
+.hero-buttons a {
+  margin: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #39ff14;
+  color: #39ff14;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.hero-buttons a:hover {
+  background: #39ff14;
+  color: #0d1117;
+}
+.projects, .find-me-section {
+  background: #161b22;
+  padding: 4rem 0;
+}
+.section-title {
+  color: #39ff14;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.project-card {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+.project-title {
+  color: #39ff14;
+}
+.project-description {
+  margin: 1rem 0;
+}
+.tech-tag {
+  background: #39ff14;
+  color: #0d1117;
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}
+.github-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 2px solid #39ff14;
+  color: #39ff14;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.github-button:hover {
+  background: #39ff14;
+  color: #0d1117;
+}
+.find-me-section .social-links {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.social-link {
+  color: #39ff14;
+  font-weight: bold;
+}
+.footer {
+  background: #0d1117;
+  color: #8b949e;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.interest-card {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(57, 255, 20, 0.1);
+  transition: transform 0.3s ease;
+}
+.interest-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(57, 255, 20, 0.3);
+}
+.interest-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  background-color: #21262d;
+  color: #39ff14;
+}
+.interest-card h3 {
+  color: #39ff14;
+  margin-bottom: 0.5rem;
+}
+.interest-card p {
+  color: #c9d1d9;
+  font-size: 0.95rem;
 }
